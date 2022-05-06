@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Modal Form </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="Author" content="Donny C" />
+    <meta name="Keywords" content="Projects" />
+    <meta name="Description" content="For learning purposes" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire"> 
+Simply add the family name and effect wanted and then use it as the font-->
+    <!-- <script src="https://kit.fontawesome.com/025f0aa31c.js" crossorigin="anonymous"></script> -->
+    <!-- Used for REACT
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+-->
+    <script src="frankfurter-api.js" defer></script>
+    <style>
+        :root {
+            --primary-color: #e9e9e9;
+            --sec-color: #ddd;
+            --tertiary-color: #ccc;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Garamond, serif
+        }
+
+        h1 {
+            font-family: helvetica, sans-serif;
+            font-weight: normal;
+        }
+        #row {
+            display: flex;
+        }
+        .row > * {
+            flex: 1;
+        }
+        select {
+            padding: 10px;
+            margin: 3px;
+        }
+        input {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 3px;
+            border: 0.5px solid gray;
+            min-width: 200px;
+            max-width: 400px;
+        }
+        option {
+            background-color: white;
+            line-height: 20px;
+        }
+
+        @media screen and (min-width: 500px) {}
+
+        @media screen and (min-width: 820px) {}
+    </style>
+</head>
+
+<body>
+    <!--,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-->
+    <!--..dddddddd...................................................................................................cccccc............................-->
+    <!--..dddd.dddd...............................................................................................ccccccccccc..........................-->
+    <!--..dddd..dddd.............................................................................................ccc........ccc........................-->
+    <!--..dddd....dddd.........................................................................................ccc...........ccc.......................-->
+    <!--..dddd.....dddd.......................................................................................ccc......................................-->
+    <!--..dddd.......dddd....................................................................................ccc.......................................-->
+    <!--..dddd........dddd..........ooooooo.......nnn..nnnnnn........nnn..nnnnnn.......yyy......yyy..........ccc.......................................-->
+    <!--..dddd..........dddd......ooooooooooo.....nnnnnnnnnnnnn......nnnnnnnnnnnnn.....yyy......yyy..........ccc.......................................-->
+    <!--..dddd...........dddd....ooo.......ooo....nnnn.......nnn.....nnnn......nnn.....yyy......yyy...........ccc............ccc.......................-->
+    <!--..dddd...........dddd....ooo.......ooo....nnn........nnn.....nnn.......nnn.....yyy......yyy.............ccc........ccc.........................-->
+    <!--..dddddddddddddddddddd....ooooooooooo.....nnn........nnn.....nnn.......nnn......yyy...yyyyy...............ccccccccccc..........................-->
+    <!--..dddddddddddddddddddd......ooooooo.......nnn........nnn.....nnn.......nnn.......yyyyyy.yyy.................cccccc.............................-->
+    <!--........................................................................................yyy....................................................-->
+    <!--........................................................................................yyy....................................................-->
+    <!--........................................................................................yyy....................................................-->
+    <!--,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-->
+
+    <h1>Currency Converter</h1>
+    <p id="first-currency">1 Dollar equals</p>
+    <div id="compared-currency">0.14 Euros</div>
+    <div id="row">
+        <input type="number" name="fvalue" id="fval" value="1" />
+        <select id="f_Currencies" name="currencies">
+        </select>
+    </div>
+    <div id="row">
+        <input type="number" name="tval" id="tval" value="" />
+        <select id="t_Currencies" name="comCurrencies">
+        </select>
+    </div>
+    <div id="demo"></div>
+
+</body>
+</html>
